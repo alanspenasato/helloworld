@@ -2,13 +2,19 @@
 
    <head>
     <title> Hello World </title>
-   </head>
+    <script type="text/javascript">
+         function showAlert() {
+          var input = document.getElementById('texto');
+            //alert('Hello World');
+            alert(input.value);
+         }
+    </script>
+  </head>
 <body>
   <div>
-    <imput type="text" />
-    <button> salvar </button>
+    <input type="text" id="texto"/>
+    <button onclick="showAlert()">salvar </button>
   </div>
 </body>
-
 
 </html>
